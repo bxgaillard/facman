@@ -1,0 +1,74 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\documentclass[a4paper,12pt,oneside]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl,aeguill}
+\usepackage{geometry}
+
+\begin{document}
+
+\setlength{\parskip}{.5 \baselineskip}
+
+\begin{center}
+\sc\LARGE
+Projet Java\\
+Jeu : Facman\\
+\rule[5pt]{.5\textwidth}{2pt}\\
+Rapport
+\end{center}
+\vspace*{1cm}
+
+\section*{Présentation}
+
+Le jeu que nous avons choisi de réaliser est un Pacman. Ce dernier reprend les
+idées originales du jeu : un personnage se déplace dans un labyrinthe parsemé
+de pastilles, il doit toutes les manger afin de passer au niveau suivant. Afin
+de corser la tâche, des fantômes hantent ce labyrinthe. Les collisions avec
+ces derniers sont fatales, il faut soit les éviter soit les manger grâce à
+l'utilisation de super pastilles.
+
+\section*{Détail des classes}
+
+Ce projet est composé de 11 classes :
+\begin{itemize}
+\item classe \emph{Facman} : chef d'orchestre des autres classes, elle
+  contient le ``main'' et fait appel aux différents éléments du jeu ;
+\item classe \emph{Character} : gère les caractéristiques communes aux
+  personnages, Pacman et Ghost ;
+\item classe \emph{Pacman} : dérive de Character, gère les possibilités de
+  déplacement et l'affichage du personnage principal du jeu ;
+\item classe \emph{Ghost} : fille de Character, contrôle les monstres et leur
+  affichage ;
+\item classe \emph{Position} : stocke et actualise les coordonnées des
+  personnages ;
+\item classe \emph{Board} : construit le labyrinthe à partir d'un fichier
+  texte représentant le niveau ;
+\item classe \emph{ImageLoader} : découpe les images sous forme d'icônes et
+  les charge en mémoire. Chaque personnage est à l'origine représenté sous
+  toutes ses faces dans une seule image ;
+\item classe \emph{Game} : contrôle la mise en pause, l'affichage du menu, du
+  score, du nombres de vies, et les niveaux de difficulté ;
+\item classe \emph{HomeScreen} : génère l'écran d'accueil ;
+\item classe \emph{AppletImageLoader} : permet le chargement des images dans
+  le cadre d'un applet ;
+\item classe \emph{ApplicationImageLoader} : permet le chargement des images
+  dans le cadre d'une application autonome.
+\end{itemize}~
+
+Il est aussi notable que Facman peut-être utilisé au choix : soit en tant
+qu'application, soit comme un applet à travers une page HTML.
+
+Pour commencer le jeu, exécuter dans un terminal soit
+\texttt{java -jar facman.jar} (démarrage en mode application) soit
+\texttt{appletviewer facman.html} (mode applet).
+
+Have fun!
+
+\begin{flushright}
+Benjamin \textsc{Gaillard}\\
+Lionel \textsc{Imbs}
+\end{flushright}
+
+\end{document}

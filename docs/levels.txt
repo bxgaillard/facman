@@ -1,0 +1,22 @@
+FORMAT DES FICHIERS DE NIVEAU
+
+Un fichier de niveau est un simple fichier texte. Il contient un niveau de la
+taille de 19 colonnes x 13 lignes. Chaque caractère correspond à une case. La
+disposition des colonnes et lignes est exactement la même dans le fichier
+texte qu'à l'écran.
+
+Les différents caractères possibles sont :
+         # : un mur ;
+  <espace> : une case vide ;
+         . : une pastille ;
+         o : une super pastille (permet à Pacman de manger les fantômes) ;
+<, >, ^, v : position initiale de Pacman, indique également sa direction
+             initiale (respectivement gauche, droite, haut, bas) ;
+         G : position initiale des fantômes ;
+       0-9 : téléporteurs : ils fonctionnent par groupe de deux, le fait
+             d'aller sur l'un déplace directement le personnage sur son
+             correspondant.
+
+Le fichier texte doit commencer directement par le niveau lui-même. Tout ce
+qui suit le niveau est ignoré ; l'espace le suivant peut donc être utilisé
+pour mettre des commentaires.

@@ -1,0 +1,64 @@
+                      DESCRIPTION DES RÈGLES DE FACMAN
+
+
+TOUCHES UTILISÉES POUR JOUER
+
+Dans l'écran d'accueil, les seules touches ayant un effet sont les touches de
+direction (flèches et pavé numérique), la touche espace et les touches entrée
+(au milieu et dans le pavé numérique). Les touches de direction servent à
+sélectionner un autre niveau de difficulté tandis qu'entrée et espace sont
+utilisées pour valider le choix.
+
+Dans le jeu lui-même, les touches de direction servent à déplacer Pacman. La
+touche espace est utilisée pour mettre le jeu en pause ou l'en sortir. La
+touche échappement (escape) permet d'abandonner le jeu et de revenir à l'écran
+d'accueil.
+
+
+DÉPLACEMENT
+
+Pacman est, lorsqu'il se déplace, toujours aligné au moins sur un axe par
+rapport au centre des cases. Cela permet d'éviter qu'il ne se situe entre
+quatre cases et améliore ainsi la maniabilité du personnage.
+
+Lorsqu'une touche de direction est appuyée mais que le déplacement dans cette
+direction n'est pas possible, Pacman continue de se déplacer dans la direction
+de son dernier déplacement si c'est possible. Cela permet une meilleure
+maniabilité dans le sens où l'on n'est pas obligé d'être exactement aligné
+avec les cases lors des intersections et qu'on veut prendre une autre
+direction.
+
+Si plusieurs touches sont appuyées en même temps, Pacman se déplacera dans la
+direction de son dernier déplacement uniquement s'il n'est pas possible de
+prendre une autre direction. Si ce mouvement n'est toujours pas possible et
+que la touche correspondant à la direction opposée est appuyée, il prendra le
+chemin de la direction opposée.
+
+
+NIVEAUX DE DIFFICULTÉ
+
+Il y a dans Facman trois niveaux de difficulté : facile, moyen et difficile.
+
+Dans le mode facile, les fantômes se déplacent à une vitesse valant la moitié
+de celle de Pacman. Leur déplacement est aléatoire.
+
+Dans le mode moyen, les fantômes se séplacent à une vitesse valant la moitié
+de cell de Pacman. Ils se dirigent vers Pacman ou s'en éloignent s'il vient de
+manger une super pastille.
+
+Dans le mode difficile, les fantômes se séplacement à la même vitesse que
+Pacman. Ils se dirigent vers Pacman ou s'en éloignent s'il vient de
+manger une super pastille.
+
+
+POINTS
+
+À chaque fois que Pacman effectue une action, il gagne un certain nombre de
+points selon ce barème :
+           il mange une pastille :   1 point ;
+     il mange une super pastille :   5 points ;
+             il mange un fantôme :  10 points ;
+il se fait manger par un fantôme : -10 points ;
+              il gagne le niveau :  50 points.
+
+Le nombre de points total représente le score obtenu.

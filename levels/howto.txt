@@ -1,0 +1,6 @@
+COMMENT CRÉER UN NIVEAU ?
+
+Il suffit de créer un fichier `level???.txt' où `???' suit l'ordre de
+numérotation. Un "trou" rend invisible les niveaux se trouvant après.
+
+Lisez ../docs/levels.txt pour connaître le format de fichier de niveau.

@@ -1,0 +1,8 @@
+ORGANISATION DES SOURCES
+
+Les fichiers source *.java se trouvent dans la racine.
+Les images sources, c'est-à-dire sous forme de calques, au format XCF (Gimp),
+se trouvent dans le répertoire `imgsrc'.
+Les images finales, utilisées par le jeu, se trouvent dans `images'.
+Les niveaux se trouvent dans `levels'.
+Les divers documents se trouvent dans la racine et dans `docs'.

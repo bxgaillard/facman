@@ -1,0 +1,11 @@
+AUTEURS
+
+Code, graphisme, documentation et niveaux principaux :
+Benjamin Gaillard <b.gaillard@powercode.net>
+Lionel Imbs <fac@ilionel.com>
+
+Graphisme de l'écran d'accueil :
+Dew <dew@evhr.net>
+
+Quelques niveaux additionnels :
+Marc-Aurèle Mörk <ma.mork@voila.fr>
